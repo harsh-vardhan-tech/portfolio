@@ -1563,3 +1563,36 @@ text-align: center;
   border: 3px solid #ffffff20;
   box-shadow: 0 0 20px #00000040;
 }
+
+/* Mobile Responsive Fix for Social Cards */
+@media (max-width: 600px) {
+
+  .social-cards-grid {
+    grid-template-columns: 1fr 1fr;   /* 2 cards per row */
+    gap: 10px;
+  }
+
+  .social-card {
+    padding: 15px;
+    border-radius: 16px;
+    transform: scale(0.9);     /* slightly smaller */
+  }
+
+  .social-card h3 {
+    font-size: 1rem;
+  }
+
+  .social-card p {
+    font-size: 0.85rem;
+  }
+
+  .social-link-btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .social-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+}
